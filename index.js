@@ -13,7 +13,11 @@ const watches = JSON.parse(fs.readFileSync('watches.json'));
 
 const checkStock = async (watch) => {
   try {
-    const response = await axios.get(watch.url);
+    const response = await axios.get(watch.url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+      },
+    });
     const html = response.data;
 
     if (!html.includes('Out of Stock')) {
