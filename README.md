@@ -56,3 +56,6 @@ This is a simple Node.js script that tracks the stock of products from a list an
 ## How it works
 
 The GitHub Actions workflow in `.github/workflows/main.yml` is configured to run the script on a schedule. It checks out the code, installs the dependencies, and then runs the `index.js` script. The script reads the `watches.json` file, checks the stock of each product, and sends a notification if a product is back in stock.
+
+---
+*This bot is configured to run automatically via GitHub Actions.*
