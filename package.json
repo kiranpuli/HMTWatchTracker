@@ -1,0 +1,22 @@
+{
+  "name": "stock-tracker",
+  "version": "1.0.0",
+  "description": "A Telegram bot to notify about product stock status.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "stock",
+    "tracker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
