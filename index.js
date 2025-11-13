@@ -24,6 +24,7 @@ const checkStock = async (watch) => {
       await bot.sendMessage(chatId, `${watch.name} is back in stock! Check it out: ${watch.url}`);
       console.log(`Stock alert sent for ${watch.name}!`);
     } else {
+      await bot.sendMessage(chatId, `${watch.name} is still out of stock stock! Check it out: ${watch.url}`);
       console.log(`${watch.name} is still out of stock.`);
     }
   } catch (error) {
